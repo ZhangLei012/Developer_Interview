@@ -1,0 +1,114 @@
+[
+  {
+    "answer": "解析：</br></br>我们用arange函数创建一个行向量。</br>x = tf.constant(range(12))</br>结果：</br>tf.Tensor: id=0, shape=(12,), dtype=int32, numpy=array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])</br>",
+    "content": "无",
+    "id": "00016",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "tensorflow如何创建一个大小为12的行向量",
+    "type": 1
+  },
+  {
+    "answer": "序号编码，独热编码，二进制编码；</br></br>序号编码常用于类别之间具有大小关系的数据。如身高可分为不高、中等、高。序号编码会按照大小关系分别赋予一个ID，如：3代表高，2代表中等，1代表不高，转换之后的数据还保留了大小关系。</br></br>独热编码也称为one-hot编码，常用于处理类别间不具有大小关系的特征。 例如血型， 一共有4个取值（A型血、 B型血、 AB型血、 O型血） ， 独热编码会把血型变成一个4维稀疏 向量， A型血表示为（1, 0, 0, 0） ， B型血表示为（0, 1, 0, 0） ， AB型表示为（0, 0, 1, 0） ， O型血表示为（0, 0, 0, 1） 。</br></br>二进制编码主要分为两步， 先用序号编码给每个类别赋予一个类别ID， 然后将类别ID对应的二进制编码作为结果。 以A、 B、 AB、 O血型为例，A型血的ID为1， 二进制表示为001； B型血的ID为2， 二进制表示为010； 以此类推可以得到AB型血和O型血的二进制表示。 可以看出， 二进制编码本质上是利用二进制对ID进行哈希映射， 最终得到0/1特征向量，且维数少于独热编码，节省了存储空间。</br></br>",
+    "content": "在对数据进行预处理时， 应该怎样处理类别型特征？",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对离散数据的编码方式有哪些？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>谷歌2013年提出的Word2Vec是目前最常用的词嵌入模型之一。Word2Vec实际是一种浅层的神经网络模型，它有两种网络结构，分别是CBOW（Continues Bagof Words） 和Skip-gram。 </br></br>CBOW的目标是根据上下文出现的词语来预测当前词的生成概率，如图1.3（a）所示；而Skip-gram是根据当前词来预测上下文中各词的生成概率，",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "Word2Vec是如何工作的？ 它和LDA有什么区别与联系？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>词袋模型：词袋模型， 顾名思义， 就是将每篇文章看成一袋子词， 并忽略每个词出现的顺序。 具体地说， 就是将整段文本以词为单位切分开，然后每篇文章可以表示成一个长向量， 向量中的每一维代表一个单词， 而该维对应的权重则反映了这个词在原文章中的重要程度。</br></br>N-gram模型：词袋模型忽略了文章中单词的排列顺序，所以，通常我们可以将连续出现的n个词（n≤N） 组成的词组（N-gram） 也作为一个单独的特征放到向量表示中去， 构成N-gram模型。 在实际应用中， 一般会对单词进行词干抽取（Word Stemming） 处理， 即将不同词性的单词统一成为同一词干的形式，也就是去除词缀得到词根的过程。</br></br>词嵌入与深度学习模型:词嵌入是一类将词向量化的模型的统称， 核心思想是将每个词都映射成低维空间（通常K=50～300维） 上的一个稠密向量（Dense Vector） 。 K维空间的每一维也可以看作一个隐含的主题， 只不过不像主题模型中的主题那样直观。",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "有哪些文本表示模型？ 它们各有什么优缺点？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>连续值通常采用二分法，离散特征通常采用多路划分的方法，但分支数不宜过多。\n连续特征每个值都划分为一个分支，容易过拟合，泛化能力差，导致训练集表现好，测试集表现差。",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "使用决策树分类时，如果输入的某个特征的值是连续的，通常使用二分法对连续属性离散化，即根据是否大于/小于某个阈值进行划分。如果采用多路划分，每个出现的值都划分为一个分支，这种方式的最大问题是：",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>过拟合和欠拟合与神经网络的复杂程度有关，模型越大越容易过拟合。隐藏层节点数量直接决定了模型的大小与复杂程度。 ",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对神经网络(neural network)而言，哪一项对过拟合(overfitting)和欠拟合(underfitting)影响最大",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>多拟合/欠拟合与模型复杂度有关，和模型复杂度最相关的是多项式的度。举一个极端的例子，度为1，则是线性回归，y=kx+b，一条直线分类，很容易欠拟合。那度比较大时，则能表示更为复杂的曲线，容易过拟合。",
+    "content": "DynamicArray<Integer> ints = new DynamicArray<>();\nDynamicArray<? extends Number> numbers = ints; \nInteger a = 200;\nnumbers.add(a);\t\t//这三行add现象？\nnumbers.add((Number)a);\nnumbers.add((Object)a);\n\npublic void copyTo(DynamicArray<? super E> dest){\n    for(int i=0; i<size; i++){\n        dest.add(get(i));\t//这行add现象？\n    }\n}",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对多项式回归(polynomial regression)而言，哪一项对过拟合(overfitting)和欠拟合(underfitting)影响最大。",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>神经网络的拟合能力非常强，因此它的训练误差（偏差）通常较小</br></br>但是过强的拟合能力会导致较大的方差，使模型的测试误差（泛化误差）增大</br></br>因此深度学习的核心工作之一就是研究如何降低模型的泛化误差，这类方法统称为正则化方法。",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "深度学习中的偏差与方差",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>Logistic 回归虽然名字里带“回归”，但是它实际上是一种分类方法，主要用于两分类问题（即输出只有两种，分别代表两个类别）</br></br>remove2 方法可以正常运行，无任何错误。</br></br>通过对数几率函数的作用，我们可以将输出的值限制在区间[0，1]上，p(x) 则可以用来表示概率 p(y=1|x)，即当一个x发生时，y被分到1那一组的概率。可是，等等，我们上面说 y 只有两种取值，但是这里却出现了一个区间[0, 1]，这是什么鬼？？其实在真实情况下，我们最终得到的y的值是在 [0, 1] 这个区间上的一个数，然后我们可以选择一个阈值，通常是 0.5，当 y > 0.5 时，就将这个 x 归到 1 这一类，如果 y< 0.5 就将 x 归到 0 这一类。</br></br>",
+    "content": "无",
+    "id": "00011",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "逻辑回归（LR）",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>事件发生前的预判概率</br></br>可以是基于历史数据的统计，可以由背景常识得出，也可以是人的主观观点给出。</br></br>一般都是单独事件发生的概率，如 P(A)、P(B)。</br></br>后验概率:基于先验概率求得的反向条件概率，形式上与条件概率相同（若 P(X|Y) 为正向，则 P(Y|X) 为反向）",
+    "content": "无",
+    "id": "00012",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "先验概率与后验概率",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>支持向量机（supporr vector machine，SVM）是一种二类分类模型，该模型是定义在特征空间上的间隔最大的线性分类器。间隔最大使它有区别于感知机；支持向量机还包括核技巧，这使它成为实质上的非线性分类器。支持向量机的学习策略就是间隔最大化，可形式化为一个求解凸二次规划的最小化问题。</br></br>支持向量机的学习算法是求解凸二次规划的最优化算法。</br></br>当训练数据线性可分时，通过硬间隔最大化（hard margin maximization）学习一个线性的分类器，即线性可分支持向量机，又成为硬间隔支持向量机；</br></br>",
+    "content": "无",
+    "id": "00013",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "解释支持向量机（SVM）？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>1.广义模型推导所得 2.满足统计的最大熵模型 3.性质优秀，方便使用（Sigmoid函数是平滑的，而且任意阶可导，一阶二阶导数可以直接由函数值得到不用进行求导，这在实现中很实用）</br></br>",
+    "content": "无",
+    "id": "00014",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "为什么 LR 要使用 sigmoid 函数？",
+    "type": 1
+  },
+  {
+    "answer": "答案：</br></br>当样本在原始空间线性不可分时，可将样本从原始空间映射到一个更高维的特征空间，使得样本在这个特征空间内线性可分。",
+    "content": "无",
+    "id": "00015",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "为什么SVM要引入核函数？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>交叉熵是对「出乎意料」（译者注：原文使用suprise）的度量。神经元的目标是去计算函数 y, 且 y = y(x)。但是我们让它取而代之计算函数 a, 且 a = a(x) 。假设我们把 a 当作 y 等于 1 的概率，1−a 是 y 等于 0 的概率。那么，交叉熵衡量的是我们在知道 y 的真实值时的平均「出乎意料」程度。当输出是我们期望的值，我们的「出乎意料」程度比较低；当输出不是我们期望的，我们的「出乎意料」程度就比较高。",
+    "content": "无",
+    "id": "00016",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "逻辑回归的代价函数：交叉熵？",
+    "type": 1
+  }
+]

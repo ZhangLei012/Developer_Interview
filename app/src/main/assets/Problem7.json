@@ -1,0 +1,74 @@
+[
+  {
+    "answer": "频率派认为抽样是无限的,在无限的抽样中,对于决策的规则可以很精确。贝叶斯派认为世界无时无刻不在改变,未知的变量和事件都有一定的概率,即后验概率是先验概率的修正。频率派认为模型参数是固定的,一个模型在无数次抽样后,参数是不变的。而贝叶斯学派认为数据才是固定的而参数并不是。频率派认为模型不存在先验而贝叶斯派认为模型存在先验。</br></br>",
+    "content": "无",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "频率学派和贝叶斯学派的区别？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>是利用已知的样本结果，反推最有可能（最大概率）导致这样结果的参数值的一种方法",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是最大似然估计？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>高斯分布，也就是正态分布，是概率论中最“通用”的概率分布之一，并且在很多环境中都有出现。例如，在试验数量很大时用在二项分布的近似处理中，或者在平均事件发生率很高时用于泊松分布。它还和大数定理相关。对于很多问题来说，我们还会经常假设系统中的噪声服从高斯分布。基于高斯分布的应用很多很多。</br></br>",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是高斯分布？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>最大似然估计提供了一种给定观察数据来评估模型参数的方法,而最大似然估计中的采样满足所有采样都是独立同分布的假设。最大后验概率是根据经验数据获难以观察量的点估计,与最大似然估计最大的不同是最大后验概率融入了要估计量的先验分布在其中,所以最大后验概率可以看做规则化的最大似然估计。",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "最大似然估计和最大后验概率的区别?",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>相关性是协方差的标准化格式。协方差本身很难做比较。例如：如果我们计算工资（￥）和年龄（岁）的协方差，因为这两个变量有不同的度量，所以我们会得到不能做比较的不同的协方差。为了解决这个问题，我们计算相关性来得到一个介于-1和1之间的值，就可以忽略它们各自不同的度量。 ",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "协方差和相关性有什么区别？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>我们不用曼哈顿距离，因为它只计算水平或者垂直距离，有维度的限制。另一方面，欧氏距离可以用于任何空间的距离计算问题。因为，数据点可以存在于任何空间，欧式距离是更可行的选择。例如：想象一下国际象棋棋盘，象或者车所有的移动的由曼哈顿距离计算的，因为他们是在各自的水平和垂直方向做的运动。",
+    "content": "无",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "在K-means或者KNN，我们是用欧氏距离来计算最近的邻居之间的距离，为什么不用曼哈顿距离？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>因为它假定所有的特征在数据集中的作用是同样重要和独立的。正如我们所知，这个假设在现实世界中是很不真实的，因此说朴素贝叶斯真的很“朴素”</br>",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "为什么朴素贝叶斯如此“朴素”？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>真阳性率 == 召回  他们有共同的公式（TP/（TP+FN））</br>",
+    "content": " 无",
+    "id": "00011",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "真阳性率和召回有什么关系？写出方程式？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>为了得到更好的预测，只有在分类变量在本质上是有序的情况下才可以被当做连续型变量来处理</br>",
+    "content": " 无",
+    "id": "00011",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "你认为把分类变量当成连续型变量会得到一个更好的预测模型吗？",
+    "type": 1
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "answer": "用随机值初始化权重和偏差，把输入传入网络，得到输出值，计算预测值和真实值之间的误差</br>对每一个产生误差的神经元，调整相应的（权重）值以减小误差，重复迭代，直至得到网络权重的最佳值</br>",
+    "content": "无",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "梯度下降算法的正确步骤是什么？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>谷歌2013年提出的Word2Vec是目前最常用的词嵌入模型之一。Word2Vec实际是一种浅层的神经网络模型，它有两种网络结构，分别是CBOW（Continues Bagof Words） 和Skip-gram。 </br></br>CBOW的目标是根据上下文出现的词语来预测当前词的生成概率，如图1.3（a）所示；而Skip-gram是根据当前词来预测上下文中各词的生成概率，",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "Word2Vec是如何工作的？ 它和LDA有什么区别与联系？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>Bagging：Dropout可以认为是一种极端的Bagging，每一个模型都在单独的数据上训练，同时，通过和其他模型对应参数的共享，从而实现模型参数的高度正则化。",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "哪项操作能实现跟神经网络中Dropout的类似效果？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>（1）数据集太小，数据样本不足时，深度学习相对其它机器学习算法，没有明显优势。</br>2）数据集没有局部相关特性，目前深度学习表现比较好的领域主要是图像／语音／自然语言处理等领域",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什麽样的资料集不适合用深度学习？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>过拟合和欠拟合与神经网络的复杂程度有关，模型越大越容易过拟合。隐藏层节点数量直接决定了模型的大小与复杂程度。 ",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对神经网络(neural network)而言，哪一项对过拟合(overfitting)和欠拟合(underfitting)影响最大",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>多拟合/欠拟合与模型复杂度有关，和模型复杂度最相关的是多项式的度。举一个极端的例子，度为1，则是线性回归，y=kx+b，一条直线分类，很容易欠拟合。那度比较大时，则能表示更为复杂的曲线，容易过拟合。",
+    "content": "DynamicArray<Integer> ints = new DynamicArray<>();\nDynamicArray<? extends Number> numbers = ints; \nInteger a = 200;\nnumbers.add(a);\t\t//这三行add现象？\nnumbers.add((Number)a);\nnumbers.add((Object)a);\n\npublic void copyTo(DynamicArray<? super E> dest){\n    for(int i=0; i<size; i++){\n        dest.add(get(i));\t//这行add现象？\n    }\n}",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对多项式回归(polynomial regression)而言，哪一项对过拟合(overfitting)和欠拟合(underfitting)影响最大。",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>神经网络的拟合能力非常强，因此它的训练误差（偏差）通常较小</br></br>但是过强的拟合能力会导致较大的方差，使模型的测试误差（泛化误差）增大</br></br>因此深度学习的核心工作之一就是研究如何降低模型的泛化误差，这类方法统称为正则化方法。",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "深度学习中的偏差与方差",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>Logistic 回归虽然名字里带“回归”，但是它实际上是一种分类方法，主要用于两分类问题（即输出只有两种，分别代表两个类别）</br></br>remove2 方法可以正常运行，无任何错误。</br></br>通过对数几率函数的作用，我们可以将输出的值限制在区间[0，1]上，p(x) 则可以用来表示概率 p(y=1|x)，即当一个x发生时，y被分到1那一组的概率。可是，等等，我们上面说 y 只有两种取值，但是这里却出现了一个区间[0, 1]，这是什么鬼？？其实在真实情况下，我们最终得到的y的值是在 [0, 1] 这个区间上的一个数，然后我们可以选择一个阈值，通常是 0.5，当 y > 0.5 时，就将这个 x 归到 1 这一类，如果 y< 0.5 就将 x 归到 0 这一类。</br></br>",
+    "content": "无",
+    "id": "00011",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "逻辑回归（LR）",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>支持向量机（supporr vector machine，SVM）是一种二类分类模型，该模型是定义在特征空间上的间隔最大的线性分类器。间隔最大使它有区别于感知机；支持向量机还包括核技巧，这使它成为实质上的非线性分类器。支持向量机的学习策略就是间隔最大化，可形式化为一个求解凸二次规划的最小化问题。</br></br>支持向量机的学习算法是求解凸二次规划的最优化算法。</br></br>当训练数据线性可分时，通过硬间隔最大化（hard margin maximization）学习一个线性的分类器，即线性可分支持向量机，又成为硬间隔支持向量机；</br></br>",
+    "content": "无",
+    "id": "00013",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "解释支持向量机（SVM）？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>我们用arange函数创建一个行向量。</br>x = tf.constant(range(12))</br><tf.Tensor: id=0, shape=(12,), dtype=int32, numpy=array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])></br>",
+    "content": "无",
+    "id": "00016",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "tensorflow如何创建一个大小为12的行向量",
+    "type": 1
+  }
+]

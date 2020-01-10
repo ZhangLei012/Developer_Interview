@@ -1,0 +1,13 @@
+ext {
+    android = [
+            support_library  : "27.0.1",
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            applicationId    : "com.github.keyboard3.developerinterview",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            versionCode      : 11,
+            versionName      : "1.6.4",
+            d_versionCode    : 5,
+            d_versionName    : "1.7.3"]
+}

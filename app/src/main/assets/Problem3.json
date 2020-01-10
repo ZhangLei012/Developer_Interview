@@ -1,0 +1,58 @@
+[
+  {
+    "answer": "协同过滤是目前应用最广泛的推荐算法，它仅仅通过了解用户与物品之间的关系进行推荐，而根本不会考虑到物品本身的属性。可分成两类：</br></br>1、基于用户（user-based）的协同过滤</br></br>2、基于商品（item-based）的协同过滤</br></br>",
+    "content": "",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是协同过滤算法？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>基于用户对物品的偏好找到邻居用户（相似用户），然后将邻居用户（相似用户）喜欢的东西推荐给当前用户。 </br></br>将一个用户对所有物品的偏好作为一个向量，计算用户之间的相似度。找到邻居后，根据邻居的相似度权重以及他们对物品的偏好，预测当前用户未涉及的物品，计算得到一个排序的物品列表作为推荐。\n相似度即为两个向量之间的距离。距离越小相似度越大",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "2.什么是基于用户的协同过滤？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>词袋模型：词袋模型， 顾名思义， 就是将每篇文章看成一袋子词， 并忽略每个词出现的顺序。 具体地说， 就是将整段文本以词为单位切分开，然后每篇文章可以表示成一个长向量， 向量中的每一维代表一个单词， 而该维对应的权重则反映了这个词在原文章中的重要程度。</br></br>N-gram模型：词袋模型忽略了文章中单词的排列顺序，所以，通常我们可以将连续出现的n个词（n≤N） 组成的词组（N-gram） 也作为一个单独的特征放到向量表示中去， 构成N-gram模型。 在实际应用中， 一般会对单词进行词干抽取（Word Stemming） 处理， 即将不同词性的单词统一成为同一词干的形式，也就是去除词缀得到词根的过程。</br></br>词嵌入与深度学习模型:词嵌入是一类将词向量化的模型的统称， 核心思想是将每个词都映射成低维空间（通常K=50～300维） 上的一个稠密向量（Dense Vector） 。 K维空间的每一维也可以看作一个隐含的主题， 只不过不像主题模型中的主题那样直观。",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "有哪些文本表示模型？ 它们各有什么优缺点？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>基于用户对物品的偏好找到相似的物品，然后根据用户的历史偏好，推荐相似的物品。",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是基于物品的协同过滤？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>1、收集用户偏好</br> </br>2、找到相似的用户或物品</br></br>3、计算推荐",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "实现协同过滤算法的步骤是什么",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>多拟合/欠拟合与模型复杂度有关，和模型复杂度最相关的是多项式的度。举一个极端的例子，度为1，则是线性回归，y=kx+b，一条直线分类，很容易欠拟合。那度比较大时，则能表示更为复杂的曲线，容易过拟合。",
+    "content": "DynamicArray<Integer> ints = new DynamicArray<>();\nDynamicArray<? extends Number> numbers = ints; \nInteger a = 200;\nnumbers.add(a);\t\t//这三行add现象？\nnumbers.add((Number)a);\nnumbers.add((Object)a);\n\npublic void copyTo(DynamicArray<? super E> dest){\n    for(int i=0; i<size; i++){\n        dest.add(get(i));\t//这行add现象？\n    }\n}",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "对多项式回归(polynomial regression)而言，哪一项对过拟合(overfitting)和欠拟合(underfitting)影响最大。",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>根据推荐物品或内容的元数据，发现物品或者内容的相关性，然后基于用户以往的喜好记录，推荐给用户相似的物品。</br>电影A和C的类型都是爱情和浪漫，那么就会给看过电影A的人推荐电影C",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "基于内容的推荐",
+    "type": 1
+  }
+]

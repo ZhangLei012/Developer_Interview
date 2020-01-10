@@ -1,0 +1,58 @@
+[
+  {
+    "answer": "word2vec是一个把词语转化为对应向量的形式。word2vec中建模并不是最终的目的，其目的是获取建模的参数，这个过程称为fake task。 </br></br>",
+    "content": "",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "word2vec的原理？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>jieba的用法：jieba是一个基于python的中文分词工具。</br></br>原理：首先使用正则表达式将中文段落粗略的分成一个个句子</br></br>2、将每个句子构成有向无环图，之后寻找最佳切分方案</br></br>3、最后对于连续的单字，采用HMM模型将其再次划分。</br>jieba分词分为“默认模式”（cut_all=False）,“全模式”(cut_all=True)以及搜索引擎模式。</br>对于“默认模式”，又可以选择是否使用 HMM 模型（HMM=True，HMM=False）",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "分词的工具jieba",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>关于激活函数的选取。在LSTM中，遗忘门、输入门、输出门使用Sigmoid函数作为激活函数；在生成候选记忆时，使用双曲正切函数Tanh作为激活函数。",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "LSTM中各模块分别使用什么激活函数，可以使用别的激活函数吗？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>Seq2Seq,全称Sequence to Sequence模型。称为序列到序列模型。大致意思是将一个序列信息，通过编码和解码生成一个新的序列模型。通常用于机器翻译、语音识别、自动对话等任务。\n在Seq2Seq模型之前，深度神经网络所擅长的问题中，输入和输出都可以表示为固定长度的向量，如果长度稍有变化，会使用补零等操作。然而对于前面的任务，其序列长度实现并不知道。如何突破这个局限，Seq2Seq应运而生。</br>",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是Seq2Seq模型？Seq2Seq有哪些优点？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>POMDP是部分可观测马尔科夫决策问题。 马尔科夫过程表示一个状态序列，每一个状态是一个随机变量，变量之间满足马尔科夫性，表示为 一个元组<S, P>，S是状态，P表示转移概率。 MDP表示为一个五元组<S, A, P, R, γ>，S是状态集合，A是动作集合，P表示转移概率，即模型， R是回报函数，γ表示折扣因子。 马尔科夫体现了无后效性，也就是说未来的决策之和当前的状态有关，和历史状态无关。",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "Seq2Seq模型加入注意力机制是为了解决什么问题？为什么选用了双向循环神经网络？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>Seq2Seq模型最核心的部分在于解码部分，大量的改进也是基于解码环节。Seq2Seq模型最基础的解码方法是贪心法：即选取一种度量标准后，每次都在当前状态下选择最佳的一个结果，直到结束。贪心法计算代价低，适合作为基准结果与其他方法比较。显然贪心法获得的是一个局部最优解，往往并不能取得最好的效果。",
+    "content": "无",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "Seq2Seq模型在解码时，有哪些常用的方法？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>谷歌2013年提出的Word2Vec是目前最常用的词嵌入模型之一。Word2Vec实际是一种浅层的神经网络模型，它有两种网络结构，分别是CBOW（Continues Bagof Words） 和Skip-gram。 </br></br>CBOW的目标是根据上下文出现的词语来预测当前词的生成概率；而Skip-gram是根据当前词来预测上下文中各词的生成概率，",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "Word2Vec是如何工作的？ 它和LDA有什么区别与联系？",
+    "type": 1
+  }
+]

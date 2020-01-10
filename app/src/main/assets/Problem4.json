@@ -1,0 +1,66 @@
+[
+  {
+    "answer": "组合不同的重采样数据集：假设建立十个模型，选取小数据类1000个数据样本，然后将大数据类别10000个数据样本分为十份，每份为1000个，并训练十个不同的模型。</br></br>",
+    "content": "无",
+    "id": "0003",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "如何解决图片数据不平衡问题？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>LeNet，AlexNet，VGG，GoogleNet，ResNet，DenseNet",
+    "content": "无",
+    "id": "0004",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "计算机视觉中经典的网络有哪些？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>反卷积也称为转置卷积，如果用矩阵乘法实现卷积操作，将卷积核平铺为矩阵，则转置卷积在正向计算时左乘这个矩阵的转置WT，在反向传播时左乘W，与卷积操作刚好相反，需要注意的是，反卷积不是卷积的逆运算。</br></br>",
+    "content": "无",
+    "id": "0005",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "什么是反卷积？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>实现上采样；近似重构输入图像，卷积层可视化。",
+    "content": "无",
+    "id": "0007",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "反卷积有哪些用途？",
+    "type": 1
+  },
+  {
+    "answer": "解答：</br></br>只要激活函数选择得当，神经元的数量足够，至少有一个隐含层的神经网络可以逼近闭区间上任意一个连续函数到任意指定的精度。 ",
+    "content": "无",
+    "id": "0008",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "解释神经网络的万能逼近定理",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>检测结果与 Ground Truth 的交集比上它们的并集，即为检测的准确率 IoU",
+    "content": "无",
+    "id": "0009",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "目标检测中IOU是如何计算的？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>小目标对应的anchor比较少，其对应的feature map上的pixel难以得到训练，这也是为什么SSD在augmentation之后精确度上涨（因为crop之后小目标就变为大目标）</br></br>要检测小目标需要足够大的feature map来提供精确特征，同时也需要足够的语义信息来与背景作区分 </br>",
+    "content": "无",
+    "id": "00010",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "为什么SSD对小目标检测效果不好？",
+    "type": 1
+  },
+  {
+    "answer": "解析：</br></br>卷积的作用：捕获图像相邻像素的依赖性；起到类似滤波器的作用，得到不同形态的feature map</br></br>激活函数的作用：引入非线性因素</br></br>池化的作用：减少特征维度大小，使特征更加可控；减少参数个数，从而控制过拟合程度；增加网络对略微变换后的图像的鲁棒性；达到一种尺度不变性，即无论物体在图像中哪个方位均可以被检测到</br>",
+    "content": " 无",
+    "id": "00011",
+    "source": "https://github.com/TotemsCN/Base/blob/master/Java%20SE/Java.md",
+    "title": "如何理解卷积、池化等、全连接层等操作？",
+    "type": 1
+  }
+]
