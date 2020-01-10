@@ -10,7 +10,6 @@ import com.github.keyboard3.developerinterview.base.IProgressDialog;
  * WebViewClient的扩展页面进度条
  *
  * @author keyboard3
- * @date 2017/9/22
  */
 
 public class ExtProgressWebViewClient extends WebViewClient implements IProgressDialog {
