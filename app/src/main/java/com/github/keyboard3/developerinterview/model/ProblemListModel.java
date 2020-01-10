@@ -17,12 +17,6 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.List;
 
-/**
- * 问题列表相关逻辑
- *
- * @author keyboard3
- * @date 2017/9/22
- */
 
 public class ProblemListModel {
     public static void saveListPosition(RecyclerView mRecyclerView, LinearLayoutManager mLinearLayoutManager, SharePreferencesHelper mSpHelper) {

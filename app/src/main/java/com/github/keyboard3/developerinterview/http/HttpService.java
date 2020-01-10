@@ -10,12 +10,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
-/**
- * 网络请求接口类
- *
- * @author keyboard3
- * @date 2017/9/6
- */
 
 public interface HttpService {
     /**

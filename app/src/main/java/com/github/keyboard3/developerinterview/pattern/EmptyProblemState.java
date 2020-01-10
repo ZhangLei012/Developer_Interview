@@ -2,9 +2,7 @@ package com.github.keyboard3.developerinterview.pattern;
 
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * Created by keyboard3 on 2018/4/30.
- */
+
 
 public class EmptyProblemState extends BaseProblemState {
     @Override

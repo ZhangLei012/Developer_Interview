@@ -16,12 +16,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * 问题列表页适配器
- *
- * @author keyboard3
- * @date 2017/9/3
- */
+
 public class ProblemAdapter extends BaseAdapter<ProblemAdapter.MyViewHolder, Problem> {
 
 

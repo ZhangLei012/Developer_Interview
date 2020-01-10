@@ -5,12 +5,7 @@ import android.os.Environment;
 
 import com.github.keyboard3.developerinterview.entity.Problem;
 
-/**
- * 配置变量类
- *
- * @author keyboard3
- * @date 2017/9/3
- */
+
 
 public class ConfigConst {
     public static final String INTENT_POSITIONS = "intent_positions";

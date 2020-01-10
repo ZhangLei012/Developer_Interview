@@ -8,12 +8,6 @@ import android.view.View;
 import com.github.keyboard3.developerinterview.fragment.ProblemsFragment;
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * Html状态
- *
- * @author keyboard3
- * @date 2017/9/7
- */
 
 public class ReinforcementLearningState extends BaseProblemState {
     public static final int ID = 3;

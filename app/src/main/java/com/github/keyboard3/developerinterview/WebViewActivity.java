@@ -18,11 +18,7 @@ import java.lang.reflect.Method;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * 网页页面
- *
- * @author keyboard3
- */
+
 public class WebViewActivity extends BaseActivity {
     @BindView(R.id.wb_content) WebView htmlContainer;
 

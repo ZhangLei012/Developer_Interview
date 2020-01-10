@@ -8,12 +8,6 @@ import android.view.View;
 import com.github.keyboard3.developerinterview.fragment.ProblemsFragment;
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * 算法状态
- *
- * @author keyboard3
- * @date 2017/9/7
- */
 
 public class ComputerVisionState extends BaseProblemState {
     public static final int ID = 5;

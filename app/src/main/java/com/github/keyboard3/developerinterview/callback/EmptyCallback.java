@@ -3,9 +3,7 @@ package com.github.keyboard3.developerinterview.callback;
 
 import com.orhanobut.logger.Logger;
 
-/**
- * Created by keyboard3 on 2018/4/30.
- */
+
 
 public class EmptyCallback implements Callback {
     @Override

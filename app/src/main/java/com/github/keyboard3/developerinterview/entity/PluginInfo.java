@@ -1,11 +1,6 @@
 package com.github.keyboard3.developerinterview.entity;
 
-/**
- * 栏目类型的插件信息
- *
- * @author keyboard3
- * @date 2017/9/12
- */
+
 
 public class PluginInfo {
     public String name;

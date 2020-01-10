@@ -7,12 +7,7 @@ import android.app.ProgressDialog;
 import com.github.keyboard3.developerinterview.R;
 import com.wang.avi.AVLoadingIndicatorView;
 
-/**
- * 基类的Fragment 让子类更加专注的实现自己的业务
- *
- * @author keyboard3
- * @date 2017/9/3
- */
+
 public class BaseFragment extends Fragment implements IProgressDialog {
     private ProgressDialog progressDialog;
     private AVLoadingIndicatorView advanceProgressView;

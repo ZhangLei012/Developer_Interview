@@ -9,12 +9,7 @@ import java.lang.reflect.Field;
 import java.util.Map;
 
 
-/**
- * 问题的状态模式和工厂模式
- *
- * @author keyboard3
- * @date 2017/9/7
- */
+
 
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class ProblemStateFactory {

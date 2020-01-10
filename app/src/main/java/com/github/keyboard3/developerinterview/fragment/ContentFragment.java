@@ -19,11 +19,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-/**
- * 面经基本内容
- *
- * @author keyboard3
- */
+
 public class ContentFragment extends BaseFragment {
     @BindView(R.id.wb_content) WebView htmlContainer;
 

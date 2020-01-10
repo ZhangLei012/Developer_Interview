@@ -17,12 +17,6 @@ import com.github.keyboard3.developerinterview.util.SystemUtil;
 
 import java.io.IOException;
 
-/**
- * 分享处理逻辑
- *
- * @author keyboard3
- * @date 2017/9/22
- */
 
 public class ShareModel {
     public static void mainOpenComingIntent(Activity activity, Uri data) {

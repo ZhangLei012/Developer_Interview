@@ -8,12 +8,7 @@ import android.view.View;
 import com.github.keyboard3.developerinterview.R;
 import com.github.keyboard3.developerinterview.fragment.ProductsFragment;
 
-/**
- * 自己的作品状态
- *
- * @author keyboard3
- * @date 2017/9/7
- */
+
 
 public class MatrixTheoryState extends BaseProblemState {
     public static final int ID = 7;

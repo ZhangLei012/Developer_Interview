@@ -1,8 +1,6 @@
 package com.github.keyboard3.developerinterview.entity;
 
-/**
- * Created by moos on 2018/4/20.
- */
+
 
 public class ReplyDetailBean {
     private String nickName;

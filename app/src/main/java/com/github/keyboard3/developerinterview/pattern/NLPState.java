@@ -2,12 +2,7 @@ package com.github.keyboard3.developerinterview.pattern;
 
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * 自己的作品状态
- *
- * @author keyboard3
- * @date 2017/9/7
- */
+
 
 public class NLPState extends BaseProblemState {
     public static final int ID = 6;

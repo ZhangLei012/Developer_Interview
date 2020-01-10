@@ -25,10 +25,6 @@ import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author keyboard3
- * @date 2017/9/8
- */
 
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class ProblemsDrive {

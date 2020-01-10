@@ -7,12 +7,6 @@ import com.github.keyboard3.developerinterview.pattern.ProblemStateFactory;
 
 import java.io.Serializable;
 
-/**
- * 题目类实体
- *
- * @author keyboard3
- * @date 2017/9/3
- */
 
 public class Problem implements Serializable, Comparable<Problem> {
 

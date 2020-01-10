@@ -6,12 +6,7 @@ import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-/**
- * 版本工具类
- *
- * @author keyboard3
- * @date 2017/9/5
- */
+
 
 public class VersionUtil {
     public static String getVersion(@NonNull Context context) {

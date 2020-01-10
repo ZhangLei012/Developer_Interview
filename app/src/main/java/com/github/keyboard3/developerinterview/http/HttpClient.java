@@ -16,12 +16,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * 网络请求的外观类
- *
- * @author keyboard3
- * @date 2017/9/6
- */
+
 
 public class HttpClient {
     private static final String TAG = "HttpClient";

@@ -10,12 +10,7 @@ import android.widget.Toast;
 
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * 系统工具类
- *
- * @author keyboard3
- * @date 2017/9/7
- */
+
 
 public class SystemUtil {
     public static void setClipboard(Context context, String title, String text) {

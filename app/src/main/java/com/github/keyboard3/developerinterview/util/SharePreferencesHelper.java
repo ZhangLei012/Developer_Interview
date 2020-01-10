@@ -6,12 +6,7 @@ import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-/**
- * SharePreferences帮助类
- *
- * @author keyboard3
- * @date 2017/9/4
- */
+
 
 public class SharePreferencesHelper {
 

@@ -2,12 +2,6 @@ package com.github.keyboard3.developerinterview.entity;
 
 import java.io.Serializable;
 
-/**
- * fir更新json信息
- *
- * @author keyboard3
- * @date 2017/9/6
- */
 
 public class Version implements Serializable {
 

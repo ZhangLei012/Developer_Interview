@@ -12,10 +12,7 @@ import com.taobao.sophix.PatchStatus;
 import com.taobao.sophix.SophixManager;
 import com.taobao.sophix.listener.PatchLoadStatusListener;
 
-/**
- * @author keyboard3
- * @date 2017/9/5
- */
+
 
 public class SophixApplication extends Application {
     private static String TAG = "DIApplication";

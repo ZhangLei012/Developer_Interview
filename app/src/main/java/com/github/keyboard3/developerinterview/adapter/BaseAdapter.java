@@ -9,12 +9,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 基类适配器
- *
- * @author keyboard3
- * @date 2017/9/3
- */
+
 
 public abstract class BaseAdapter<T extends RecyclerView.ViewHolder, type> extends RecyclerView.Adapter<T> {
     protected WeakReference<Activity> weakActivity;

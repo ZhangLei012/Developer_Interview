@@ -8,12 +8,7 @@ import android.view.View;
 import com.github.keyboard3.developerinterview.fragment.ContentFragment;
 import com.github.keyboard3.developerinterview.R;
 
-/**
- * 其他状态
- *
- * @author keyboard3
- * @date 2017/9/7
- */
+
 
 public class RecommendationAlgorithmState extends BaseProblemState {
     public static final int ID = 4;

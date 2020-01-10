@@ -5,10 +5,7 @@ import android.content.Context;
 import com.qihoo360.replugin.RePluginApplication;
 import com.qihoo360.replugin.RePluginCallbacks;
 
-/**
- * @author keyboard3
- * @date 2017/9/11
- */
+
 
 public class RePlugin360Application extends RePluginApplication {
     @Override

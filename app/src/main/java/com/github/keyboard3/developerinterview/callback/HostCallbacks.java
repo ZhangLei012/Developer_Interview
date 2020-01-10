@@ -7,12 +7,7 @@ import com.github.keyboard3.developerinterview.ConfigConst;
 import com.github.keyboard3.developerinterview.http.HttpClient;
 import com.qihoo360.replugin.RePluginCallbacks;
 
-/**
- * 360插件化的回调 如果插件不存在就去下载
- *
- * @author keyboard3
- * @date 2017/9/11
- */
+
 
 public class HostCallbacks extends RePluginCallbacks {
     private static String TAG = "HostCallbacks";

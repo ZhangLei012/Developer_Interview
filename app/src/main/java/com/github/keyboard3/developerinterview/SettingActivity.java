@@ -9,12 +9,7 @@ import com.github.keyboard3.developerinterview.util.VersionUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * 设置页面
- * 导入、导出、版本检测
- *
- * @author keyboard3
- */
+
 public class SettingActivity extends BaseActivity {
     @BindView(R.id.tv_version) TextView versionView;
 

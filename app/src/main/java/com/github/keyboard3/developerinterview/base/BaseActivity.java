@@ -11,12 +11,7 @@ import android.view.MenuItem;
 import com.github.keyboard3.developerinterview.R;
 import com.wang.avi.AVLoadingIndicatorView;
 
-/**
- * 基类的Activity 让子类更加专注的实现自己的业务
- *
- * @author keyboard3
- * @date 2017/9/3
- */
+
 public class BaseActivity extends AppCompatActivity implements IProgressDialog {
 
     private AVLoadingIndicatorView advanceProgressView;

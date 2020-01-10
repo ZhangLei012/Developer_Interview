@@ -13,12 +13,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/**
- * 文件工具
- *
- * @author keyboard3
- * @date 2017/9/4
- */
 
 public class FileUtil {
     public static void copyFile(@NonNull InputStream ins, @NonNull File file) {

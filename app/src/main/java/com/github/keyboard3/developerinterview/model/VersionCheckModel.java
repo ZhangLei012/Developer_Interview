@@ -11,12 +11,7 @@ import com.github.keyboard3.developerinterview.util.VersionUtil;
 
 import io.reactivex.functions.Consumer;
 
-/**
- * 版本检测相关逻辑
- *
- * @author keyboard3
- * @date
- */
+
 
 public class VersionCheckModel {
     public static void versionCheck(final Context context) {
